@@ -8,9 +8,10 @@ O programa simula a criação de uma conta bancária por meio da entrada de dado
 
 - Número da agência
 - Número da conta
-- Nome do cliente
+- Nome do cliente (permitido nome completo)
+- Saldo inicial (com suporte a vírgula ou ponto)
 
-Com essas informações, o sistema exibe uma mensagem personalizada confirmando a criação da conta e apresentando o saldo inicial.
+Com essas informações, o sistema exibe uma mensagem personalizada confirmando a criação da conta e apresentando o saldo informado.
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -35,21 +36,25 @@ Com essas informações, o sistema exibe uma mensagem personalizada confirmando 
 ## 🧠 Conceitos praticados
 
 - Entrada de dados com `Scanner`
-- Declaração de variáveis
+- Leitura de linha com `nextLine()` e consumo de quebra de linha com `nextLine()` extra
+- Suporte a nomes com espaços
+- Suporte a vírgula como separador decimal usando `Locale("pt", "BR")`
 - Impressão formatada com `System.out.printf`
 - Tipos primitivos e Strings
 
 ## ✅ Exemplo de execução
 
 ```text
-Por favor digite o número da Agência!
+Por favor digite o número da Agência:
 067-8
-Digite o número da Conta!
+Digite o número da Conta:
 1021
-Digite o seu Nome!
-Renan
+Digite o seu Nome completo:
+Renan Pereira
+Digite o valor do Saldo:
+237,48
 
-Olá Renan, obrigado por criar uma conta em nosso banco, sua agência é 067-8, conta 1021 e seu saldo R$237.48 já está disponível para saque.
+Olá Renan Pereira, obrigado por criar uma conta em nosso banco, sua agência é 067-8, conta 1021 e seu saldo R$237.48 já está disponível para saque.
 ```
 
 ---
