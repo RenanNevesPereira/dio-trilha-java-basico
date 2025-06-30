@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class ContaTerminal {
 
     public static void main(String[] args) throws Exception {
-        Locale.setDefault(new Locale("pt", "BR")); // aceita vírgula ou ponto
+        Locale.setDefault(Locale.of("pt", "BR"));
         Scanner scanner = new Scanner(System.in).useLocale(Locale.getDefault());
 
         int numeroConta;
@@ -18,10 +18,10 @@ public class ContaTerminal {
         System.out.println("Digite o número da Conta:");
         numeroConta = scanner.nextInt();
 
-        scanner.nextLine(); // consome a quebra de linha deixada pelo nextInt()
+        scanner.nextLine(); // consome a quebra de linha
 
         System.out.println("Digite o seu Nome completo:");
-        nomeCliente = scanner.nextLine(); // agora pode conter espaços
+        nomeCliente = scanner.nextLine();
 
         System.out.println("Digite o valor do Saldo:");
         saldo = scanner.nextDouble();
