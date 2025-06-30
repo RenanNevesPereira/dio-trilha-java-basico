@@ -9,7 +9,7 @@ O programa simula a criação de uma conta bancária por meio da entrada de dado
 - Número da agência
 - Número da conta
 - Nome do cliente (permitido nome completo)
-- Saldo inicial (com suporte a vírgula ou ponto)
+- Saldo inicial (com vírgula)
 
 Com essas informações, o sistema exibe uma mensagem personalizada confirmando a criação da conta e apresentando o saldo informado.
 
